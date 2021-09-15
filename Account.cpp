@@ -68,7 +68,7 @@ ofstream &operator<<(ofstream &ofs, Account &ac){
 }
 ifstream &operator>>(ifstream &ifs, Account &ac){
     ifs>>ac.accountNumber;
-    ifs>>ac.firstName;
+    getline(ifs >> ws, ac.firstName);
     ifs>>ac.lastName;
     ifs>>ac.contactNumber;
     ifs>>ac.address;
