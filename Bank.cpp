@@ -44,7 +44,7 @@ int main()
         {
         case 1:
             cout << "Enter Your First Name : ";
-            cin >> fname;
+            getline(cin >> ws, fname);
             cout << "Enter Your Last Name : ";
             cin >> lname;
             cout << "Enter Your Contact Number : ";
